@@ -29,6 +29,7 @@ subjects:
   {'name': 'ansible', 'repo': 'workspace-ansible', 'dag': 'workspace-update-ansible'},
   {'name': 'dotfiles', 'repo': 'workspace-dotfiles', 'dag': 'workspace-update-dotfiles'},
   {'name': 'skills', 'repo': 'skills', 'dag': 'workspace-update-dotfiles'},
+  {'name': 'workflows', 'repo': 'workflows', 'dag': 'workspace-update-workflows'},
 ] %}
   - name: {{workspace}}-{{relay.name}}
     subject: github.{{org}}.{{relay.repo}}.push.none
